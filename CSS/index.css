@@ -15,6 +15,7 @@
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
+  user-select: none;
 }
 .dropdown .dropdown-button:hover {
   background-color: #be2530;
@@ -28,6 +29,7 @@
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #931d25;
+  overflow: hidden;
 }
 .dropdown .dropdown-link {
   width: 100%;
