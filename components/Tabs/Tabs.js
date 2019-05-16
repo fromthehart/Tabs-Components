@@ -78,6 +78,21 @@ class TabItem {
   }
 }
 
+class Tabs {
+  constructor() {
+    this.selected = document.querySelector('.tabs-link-selected').dataset.tab
+    console.log(this.selected)
+    this.links = document.querySelectorAll('.tabs-link')
+    this.links.forEach(link => {
+      console.log(link)
+      new TabLink(link)
+    })
+
+  }
+}
+
+const tabs = new Tabs();
+
 /* START HERE: 
 
 - Select all classes named ".tabs-link" and assign that value to the links variable
@@ -88,8 +103,3 @@ class TabItem {
 
 */
 
-links = document.querySelectorAll('.tabs-link')
-links.forEach(link => {
-  console.log(link)
-  new TabLink(link)
-});
