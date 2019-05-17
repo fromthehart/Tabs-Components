@@ -24,12 +24,12 @@ class Dropdown {
   }
 }
 
-
 // Nothing to do here, just study what the code is doing and move on to the Dropdown class
 let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown))
 
 let tween = TweenLite.from(".dropdown-content", 0.5, {
   height: 0,
+  opacity: 0,
   paused: true,
   reversed: true
 });
